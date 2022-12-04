@@ -33,20 +33,18 @@ main {
   grid-template-rows: repeat(4) 7fr;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  visibility: hidden;
 }
-
-.day-time-container {
+.open-hours-container .day-time-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 2em;
 }
-
-.day {
+.open-hours-container .day {
   text-align: end;
   margin: 10px;
 }
-
-.time {
+.open-hours-container .time {
   margin: 10px;
   transform: translateX(5%);
 }
