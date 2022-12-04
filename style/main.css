@@ -22,7 +22,7 @@ main .links-container {
 }
 main .links-container .link-button {
   text-decoration: none;
-  background-color: #bc8755;
+  background-color: #060d0a;
   color: #f7efee;
   font-weight: 600;
   height: 50px;
@@ -35,7 +35,7 @@ main .links-container .link-button {
 }
 main .links-container .link-button:hover {
   transition: 0.35s;
-  background-color: #a2754a;
+  background-color: rgb(66, 66, 66);
 }
 main .image-container {
   display: flex;
