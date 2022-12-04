@@ -68,8 +68,16 @@ main {
 
 .menu-items {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "left center right";
   gap: 0.5em;
+}
+.menu-items .button-text {
+  padding: 5px;
+  background-color: #919294;
+}
+.menu-items #home-button {
+  grid-area: center;
 }
 
 .button {
@@ -77,7 +85,6 @@ main {
   justify-content: center;
   font-weight: bold;
   font-size: 1.6rem;
-  background-color: #919294;
   border-radius: 10px;
   text-decoration: none;
   color: #f7efee;
@@ -91,4 +98,8 @@ main {
 
 .icons {
   height: 1.2em;
+}
+
+footer {
+  text-align: center;
 }/*# sourceMappingURL=bageri.css.map */
