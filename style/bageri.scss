@@ -75,8 +75,18 @@ main {
 
 .menu-items {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'left center right';
     gap: 0.5em;
+
+    .button-text{
+        padding: 5px;
+        background-color: $grey;       
+    }
+
+    #home-button{
+        grid-area: center;
+    }
 }
 
 .button{
@@ -84,12 +94,14 @@ main {
     justify-content: center;
     font-weight: bold;
     font-size: 1.6rem;
-    background-color: $grey;
+    // background-color: $grey;
     border-radius: 10px;
     text-decoration: none;
     color: $white;
     cursor:pointer;
 }
+
+
 
 .button:hover{
     background-color:rgb(131, 131, 131);
