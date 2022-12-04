@@ -29,11 +29,14 @@ main {
   margin: 0;
 }
 
+.skelleftea {
+  visibility: hidden;
+}
+
 .open-hours-container {
   grid-template-rows: repeat(4) 7fr;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  visibility: hidden;
 }
 .open-hours-container .day-time-container {
   display: grid;
