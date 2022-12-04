@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text {
+  font-family: "Courgette", cursive;
+}
+
+.header-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-picture {
+  margin-top: 8%;
+  height: 400px;
+  width: 400px;
+  margin-bottom: 10%;
+}
+
+.title {
+  display: grid;
+  justify-content: center;
+  margin: 0;
+}
+
+.open-hours-container {
+  grid-template-rows: repeat(4) 7fr;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.day-time-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 2em;
+}
+
+.day {
+  text-align: end;
+  margin: 10px;
+}
+
+.time {
+  margin: 10px;
+  transform: translateX(5%);
+}
+
+.last-day {
+  margin-bottom: 15px;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social-link {
+  display: grid;
+  font-size: 1.5em;
+  justify-content: center;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+}
+
+.button {
+  display: grid;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  background-color: #919294;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #f7efee;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(131, 131, 131);
+  transition: 0.35s;
+}
+
+.icons {
+  height: 1.2em;
+}/*# sourceMappingURL=bageri.css.map */

@@ -10,14 +10,16 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    row-gap: 16px;
+    row-gap: 5%;  
 
-    .block {}
-
+    .logo {
+        height: 400px;
+        width: 400px;
+    }
 
     .links-container {
         display: flex;
-        gap: 16px;
+        gap: 25px;
         align-items: center;
         justify-content: center;
 
@@ -27,35 +29,35 @@ main {
             color: $white;
             font-weight: 600;
             height: 50px;
-            padding: 12px 16px;
-            min-width: 100px;
+            padding: 6px 16px;
             border-radius: 10px;
             text-align: center;
-            box-shadow: 1px 1px 2px $gray;
+            box-shadow: 1px 1px 2px $grey;
+            min-width: 150px;
+            font-size: 1.5rem;
 
             &:hover {
+                transition: 0.35s;
                 background-color: $beige-100;
             }
 
-            &:focus {}
+            // &:focus {}
 
-            &:visited {}
-
-        }
-
-
-        .image-container {
-            display: flex;
-            flex-direction: row;
-            gap: 8px;
-
-            img {
-                border-radius: 5px;
-            }
+            // &:visited {}
 
         }
-
-
-
+                    
     }
+    .image-container {
+       display: flex;
+       flex-direction: row;
+       gap: 15px;
+   
+       .main-bottom-image {
+           border-radius: 5px;
+           height: 350px;
+       }
+   
+   }
+
 }

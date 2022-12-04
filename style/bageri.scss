@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +9,7 @@ main {
     grid-template-rows: repeat(5,1fr);
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    // background-color: #f7efee;
     height: 100vh;
 }
 
@@ -22,8 +24,10 @@ main {
 }
 
 .header-picture {
-    width: 35em;
-    border-radius: 50%;
+    margin-top: 8%;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 10%;
 }
 
 .title{
@@ -60,7 +64,7 @@ main {
 
 .links-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
 }
 
 .social-link {
@@ -71,7 +75,7 @@ main {
 
 .menu-items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0.5em;
 }
 
@@ -80,20 +84,19 @@ main {
     justify-content: center;
     font-weight: bold;
     font-size: 1.6rem;
-    background-color: rgba(92, 137, 175, 0.144);
+    background-color: $grey;
     border-radius: 10px;
     text-decoration: none;
-    color: black;
+    color: $white;
     cursor:pointer;
 }
 
 .button:hover{
-    background-color: black;
-    color: white;
-    transition: 0.4s;
+    background-color:rgb(131, 131, 131);
+    transition: 0.35s;
 }
 
 .icons {
-    height: 2em;
+    height: 1.2em;
 }
 
